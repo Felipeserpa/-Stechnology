@@ -9,7 +9,8 @@ declare module "styled-components" {
     aliceBlue: string;
     white: string;
     black: string;
-    gray: string;
+    grey: string;
+    darkGrey: string;
     linearGradient: string;
     transparent: string;
   }

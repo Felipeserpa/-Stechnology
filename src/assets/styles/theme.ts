@@ -6,9 +6,10 @@ const theme = {
   aliceBlue: "aliceblue",
   white: "white",
   black: "#000000",
-  gray: "#cacaca",
+  grey: "#cacaca",
+  darkGrey: "#a8a8a8",
   linearGradient: "linear-gradient(60deg, #01394e 0%, hsl(200, 97%, 10%) 100%)",
-  transparent: "transparent"
+  transparent: "transparent",
 };
 
 export default theme
