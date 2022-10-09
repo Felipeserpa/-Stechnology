@@ -6,8 +6,9 @@ import { Header } from "./assets/components/Header"
 import { Portfolio } from "./assets/components/Portfolio";
 import { Presentation } from "./assets/components/Presentation";
 import { Skills } from "./assets/components/Skills";
-import { GlobalStyles } from "./assets/styles/GlobalStyles"
-import theme from "./assets/styles/theme"
+import { GlobalStyles } from "./assets/styles/GlobalStyles";
+import theme from "./assets/styles/theme";
+import { Toaster } from "react-hot-toast";
 
 function App() {
  
@@ -15,6 +16,7 @@ function App() {
   return (
     <div>
       <ThemeProvider theme={theme}>
+        <Toaster position="bottom-right" font-size="1 rem" />
         <GlobalStyles />
         <Header />
         <Presentation />
