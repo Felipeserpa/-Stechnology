@@ -17,7 +17,7 @@ export const Container = styled.div`
     font-size: 10rem;
     color: ${(props) => props.theme.secondaryColor};
     cursor: pointer;
-    transition: all 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
     @media (max-width: 930px) {
       font-size: 6rem;
     }
