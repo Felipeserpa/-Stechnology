@@ -1,18 +1,20 @@
 
+import { getAboutMe } from "../../../helpers/prismic/posts";
 import { Container } from "./styles";
 
 export function About() {
+  const paragraph = getAboutMe();
   return (
     <Container>
       <section id="about" className="section-blue">
-        <div className="container" data-aos="fade-up">
+        <div className="container">
           <h1 className="section-title text-white">Sobre Mim</h1>
           <div className="section-container">
             <article>
               <p>Olá, eu sou o Samuel.</p>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, porro maxime sequi hic est impedit amet ut nemo. Nam excepturi eos aspernatur eaque repudiandae commodi distinctio debitis sint saepe autem!</p>
+              <p>{paragraph?.about_me_text}</p>
             </article>
-            <picture data-aos="fade-up">
+            <picture>
               <img src="/avatar.webp" alt="avatar.webp" />
             </picture>
           </div>
