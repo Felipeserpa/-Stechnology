@@ -33,7 +33,7 @@ p{
   line-height: 2.3rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
-  color: ${(props) => props.theme.gray};
+  color: ${(props) => props.theme.grey};
   text-decoration: none;
 }
 
@@ -92,9 +92,9 @@ body::-webkit-scrollbar-thumb:hover {
   background-image: ${(props) => props.theme.linearGradient};
 }
 
-.section-gray {
+.section-grey {
   padding-bottom: 10rem;
-  background-color: ${(props) => props.theme.gray};
+  background-color: ${(props) => props.theme.grey};
 }
 
 .section-title {
