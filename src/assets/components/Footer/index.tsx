@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Container } from "./styles";
 export function Footer() {
   return (
@@ -9,17 +9,17 @@ export function Footer() {
           <div className="social-links">
             <a href="https://github.com/samuelsilvati" target="_blank">
               <i>
-                <AiFillGithub />
+                <FaGithub />
               </i>
             </a>
             <a href="https://www.linkedin.com/in/samuelsilvati" target="_blank">
               <i>
-                <AiFillLinkedin />
+                <FaLinkedin />
               </i>
             </a>
             <a href="mailto:samuel7silva@outlook.com" target="_blank">
               <i>
-                <AiFillMail />
+                <FaEnvelope />
               </i>
             </a>
           </div>

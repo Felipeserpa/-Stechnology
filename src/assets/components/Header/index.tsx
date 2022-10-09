@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope
+} from "react-icons/fa";
 import { Container } from "./styles";
 
 export function Header() {
@@ -18,7 +22,7 @@ export function Header() {
   };
 
   window.addEventListener("scroll", changeBackground);
-  
+
   return (
     <Container>
       <header id="navbar" className={navbar ? "navbar active" : "navbar"}>
@@ -50,7 +54,7 @@ export function Header() {
             <div className="social-links">
               <a href="https://github.com/samuelsilvati" target="_blank">
                 <i>
-                  <AiFillGithub />
+                  <FaGithub />
                 </i>
               </a>
               <a
@@ -58,12 +62,12 @@ export function Header() {
                 target="_blank"
               >
                 <i>
-                  <AiFillLinkedin />
+                  <FaLinkedin />
                 </i>
               </a>
               <a href="mailto:samuel7silva@outlook.com" target="_blank">
                 <i>
-                  <AiFillMail />
+                  <FaEnvelope />
                 </i>
               </a>
             </div>
