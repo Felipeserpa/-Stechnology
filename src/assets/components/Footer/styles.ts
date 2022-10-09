@@ -11,6 +11,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 930px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 
   footer p {
@@ -34,29 +38,18 @@ export const Container = styled.div`
     background-color: ${(props) => props.theme.black};
     padding: 2rem;
     text-align: center;
+    @media (max-width: 930px) {
+      height: 8rem;
+      width: 100%;
+    }
   }
 
   footer .container p {
     font-size: 1.7rem;
     font-weight: 500;
     color: ${(props) => props.theme.white};
-  }
-
-  @media (max-width: 930px) {
-    footer .section-container {
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-    footer .container {
-      height: 8rem;
-      width: 100%;
-    }
-
-    footer .container p {
+    @media (max-width: 930px) {
       font-size: 1.4rem;
-      font-weight: 500;
-      color: ${(props) => props.theme.white};
     }
   }
 `;
