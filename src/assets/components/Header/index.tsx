@@ -29,7 +29,7 @@ export function Header() {
         <nav>
           <div id="logo">
             <a href="/">
-              <img src="/favicon.png" alt="" style={{ width: 40 }} />
+              <img src="/logo.png" alt="" style={{ width: 40 }} />
             </a>
           </div>
           <div className={active ? "nav-menu  active" : "nav-menu "} id="two">
