@@ -1,5 +1,6 @@
 import { ThemeProvider } from "styled-components"
 import { About } from "./assets/components/About";
+import { Contact } from "./assets/components/Contact";
 import { Footer } from "./assets/components/Footer";
 import { Header } from "./assets/components/Header"
 import { Portfolio } from "./assets/components/Portfolio";
@@ -21,6 +22,7 @@ function App() {
         <Portfolio />
         <About />
         <div className="height"></div>
+        <Contact />
         <Footer />
       </ThemeProvider>
     </div>
