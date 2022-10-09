@@ -92,17 +92,17 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .section-blue {
-  padding-bottom: 100px;
-  background-image: linear-gradient(60deg, #01394e 0%, hsl(200, 97%, 10%) 100%);
+  padding-bottom: 10rem;
+  background-image: ${(props) => props.theme.linearGradient};
 }
 
 .section-gray {
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
   background-color: ${(props) => props.theme.gray};
 }
 
 .section-title {
-  padding: 100px;
+  padding: 10rem;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
