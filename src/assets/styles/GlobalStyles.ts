@@ -37,6 +37,26 @@ p{
   text-decoration: none;
 }
 
+/* Rollbar ============================================== */
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: ${(props) => props.theme.backgroundColor};
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: ${(props) => props.theme.secondaryColor};
+  border-radius: 10px;
+  border: 3px solid ${(props) => props.theme.backgroundColor};
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: ${(props) => props.theme.secondaryColorHover};
+}
+
 .height {
   height: 200vh;
 }
