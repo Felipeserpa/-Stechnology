@@ -21,7 +21,6 @@ function App() {
         <Skills />
         <Portfolio />
         <About />
-        <div className="height"></div>
         <Contact />
         <Footer />
       </ThemeProvider>

@@ -57,10 +57,6 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: ${(props) => props.theme.secondaryColorHover};
 }
 
-.height {
-  height: 200vh;
-}
-
 /* Navigation ============================================== */
 .social-links {
   font-size: 2.8rem;
