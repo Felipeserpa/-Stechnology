@@ -68,4 +68,62 @@ export const Container = styled.div`
   nav ul a:hover {
     color: ${(props) => props.theme.secondaryColorHover};
   }
+
+  .hamburger {
+    display: none;
+    @media (max-width: 930px) {
+      display: block;
+      position: absolute;
+      right: 30px;
+      z-index: 2;
+    }
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #9c5000;
+  }
+
+  .bar:nth-child(2) {
+    width: 20px;
+    right: 1px;
+  }
+
+  @media (max-width: 930px) {
+    
+    #logo {
+      display: block;
+      position: absolute;
+      left: 20px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(10px) rotate(-45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-10px) rotate(45deg);
+    }
+
+    .nav-menu.active {
+      opacity: 1;
+      right: 0;
+    }
+
+    .nav-menu ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 70px 0 50px 0;
+      font-size: 3rem;
+    }
+  }
 `;
