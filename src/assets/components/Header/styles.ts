@@ -60,12 +60,12 @@ export const Container = styled.div`
   }
 
   nav ul a {
-    color: #9c5000;
+    color: ${(props) => props.theme.secondaryColor};
     padding: 1rem 1.5rem;
     transition: 0.4s;
   }
 
   nav ul a:hover {
-    color: #ff8605;
+    color: ${(props) => props.theme.secondaryColorHover};
   }
 `;

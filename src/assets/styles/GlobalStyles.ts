@@ -13,7 +13,7 @@ html {
   font-family: 10px;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  background-color: #011c28;
+  background-color: ${(props) => props.theme.backgroundColor};
 }
 
 a {
@@ -33,7 +33,7 @@ p{
   line-height: 2.3rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
-  color: #cacaca;
+  color: ${(props) => props.theme.gray};
   text-decoration: none;
 }
 
@@ -46,12 +46,12 @@ p{
 
 .social-links a {
   font-size: 3rem;
-  color: #9c5000;
+  color: ${(props) => props.theme.secondaryColor};
   transition: 0.6s;
 }
 
 .social-links a:hover {
-  color: #ff8605;
+  color: ${(props) => props.theme.secondaryColorHover};
 }
 
 /* Container ============================================== */
@@ -74,7 +74,7 @@ p{
 
 .section-gray {
   padding-bottom: 100px;
-  background-color: #cacaca;
+  background-color: ${(props) => props.theme.gray};
 }
 
 .section-title {
@@ -86,12 +86,11 @@ p{
 }
 
 .text-white {
-  color: aliceblue;
+  color: ${(props) => props.theme.aliceBlue};
 }
 
 .text-blue {
-  color: #01394e;
+  color: ${(props) => props.theme.primaryColor};
 }
-
 
 `;
