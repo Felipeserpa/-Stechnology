@@ -9,11 +9,12 @@ function App() {
   return (
     <div>
       <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Header />
+        <GlobalStyles />
+        <Header />
+        <div className="height"></div>
       </ThemeProvider>
     </div>
-  )
+  );
 }
 
 export default App

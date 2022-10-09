@@ -1,17 +1,27 @@
 import { useState } from "react";
-import {AiFillGithub, AiFillLinkedin, AiFillMail} from "react-icons/ai"
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { Container } from "./styles";
-
 
 export function Header() {
   const [active, setMode] = useState(false);
   const toggleMode = () => {
     setMode(!active);
-  }
+  };
 
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY > 10) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+  
   return (
     <Container>
-      <header id="navbar">
+      <header id="navbar" className={navbar ? "navbar active" : "navbar"}>
         <nav>
           <div id="logo">
             <a href="/">
@@ -61,7 +71,8 @@ export function Header() {
           <div
             className={active ? "hamburger active" : "hamburger"}
             id="one"
-            onClick={toggleMode}>
+            onClick={toggleMode}
+          >
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
