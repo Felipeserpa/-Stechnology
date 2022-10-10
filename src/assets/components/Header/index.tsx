@@ -41,7 +41,7 @@ export function Header() {
             </a>
           </div>
           <div className={active ? "nav-menu  active" : "nav-menu "}>
-            <ul onClick={() => setMode(!active)}>
+            <ul onClick={() => setMode(false)}>
               <li>
                 <a href="#inicio">HOME</a>
               </li>
@@ -59,7 +59,7 @@ export function Header() {
               </li>
             </ul>
 
-            <div className="social-links" onClick={() => setMode(!active)}>
+            <div className="social-links" onClick={() => setMode(false)}>
               <a href="https://github.com/samuelsilvati" target="_blank">
                 <i>
                   <FaGithub />
