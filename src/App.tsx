@@ -12,9 +12,8 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
  
-
   return (
-    <div>
+    <>
       <ThemeProvider theme={theme}>
         <Toaster position="bottom-right" font-size="1 rem" />
         <GlobalStyles />
@@ -26,7 +25,7 @@ function App() {
         <Contact />
         <Footer />
       </ThemeProvider>
-    </div>
+    </>
   );
 }
 

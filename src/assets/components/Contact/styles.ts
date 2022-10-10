@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   .section-container {
-    padding: 0 30px 100px;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
-    margin-top: 8rem;
     gap: 1rem;
   }
 
