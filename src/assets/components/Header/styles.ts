@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  #navbar {
+  .header {
     position: fixed;
     width: 100%;
     display: flex;
@@ -16,9 +16,10 @@ export const Container = styled.div`
       backdrop-filter: blur(0.8rem);
       padding: 1rem;
       @media (max-width: 930px) {
-        padding: 1rem 0;
+        padding: 0.5rem 0;
       }
     }
+  }
 
     nav {
       max-width: 1200px;
@@ -29,11 +30,11 @@ export const Container = styled.div`
       width: 100%;
       z-index: 2;
       transition: all 0.3s ease-in-out;
-      @media (max-width: 930px) {
+      @media (max-width: 920px) {
         position: relative;
         display: flex;
         justify-content: space-between;
-        padding: 20px 0;
+        padding: 2rem ;
       }
     }
 
@@ -42,7 +43,7 @@ export const Container = styled.div`
       align-items: center;
       justify-content: space-between;
       width: 70%;
-      @media (max-width: 930px) {
+      @media (max-width: 920px) {
         position: fixed;
         right: -100%;
         top: 0;
@@ -132,5 +133,4 @@ export const Container = styled.div`
         font-size: 3rem;
       }
     }
-  }
 `;
