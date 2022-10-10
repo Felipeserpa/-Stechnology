@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import {
   FaGithub,
   FaLinkedin,
@@ -11,6 +11,14 @@ export function Header() {
   const toggleMode = () => {
     setMode(!active);
   };
+
+   useLayoutEffect(() => {
+     if (active) {
+       document.body.style.overflow = "hidden";
+     } else {
+       document.body.style.overflow = "auto";
+     }
+   }, [active]);
 
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
@@ -25,15 +33,15 @@ export function Header() {
 
   return (
     <Container>
-      <header id="navbar" className={navbar ? "navbar active" : "navbar"}>
+      <header className={navbar ? "header active" : "header"}>
         <nav>
           <div id="logo">
             <a href="/">
               <img src="/logo.png" alt="" style={{ width: 40 }} />
             </a>
           </div>
-          <div className={active ? "nav-menu  active" : "nav-menu "} id="two">
-            <ul>
+          <div className={active ? "nav-menu  active" : "nav-menu "}>
+            <ul onClick={() => setMode(!active)}>
               <li>
                 <a href="#inicio">HOME</a>
               </li>
@@ -51,7 +59,7 @@ export function Header() {
               </li>
             </ul>
 
-            <div className="social-links">
+            <div className="social-links" onClick={() => setMode(!active)}>
               <a href="https://github.com/samuelsilvati" target="_blank">
                 <i>
                   <FaGithub />
