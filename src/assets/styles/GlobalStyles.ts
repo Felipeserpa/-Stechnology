@@ -90,19 +90,28 @@ body::-webkit-scrollbar-thumb:hover {
 .section-blue {
   padding-bottom: 10rem;
   background-image: ${(props) => props.theme.linearGradient};
+  @media (max-width: 930px) {
+    padding-bottom: 5rem;
+  }
 }
 
 .section-grey {
   padding-bottom: 10rem;
   background-color: ${(props) => props.theme.grey};
+  @media (max-width: 930px) {
+    padding-bottom: 5rem;
+  }
 }
 
 .section-title {
-  padding: 10rem;
+  padding: 10rem 0;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
+  @media (max-width: 930px){
+    padding: 6rem 0;
+  }
 }
 
 .text-white {
@@ -113,4 +122,10 @@ body::-webkit-scrollbar-thumb:hover {
   color: ${(props) => props.theme.primaryColor};
 }
 
+@media (max-width: 930px) {
+
+    section {
+        overflow-x: hidden;
+    } 
+}
 `;
