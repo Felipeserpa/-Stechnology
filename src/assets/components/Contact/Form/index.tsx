@@ -1,6 +1,8 @@
 import { FormEvent, useState } from "react";
 import { Container } from "./styles";
 import toast from "react-hot-toast";
+import emailjs from "@emailjs/browser"
+
 
 export function Form() {
   const [name, setName] = useState("");
@@ -20,16 +22,28 @@ export function Form() {
       return;
     }
     try {
-      console.log(name, email, message);
-      setName("");
-      setMail("");
-      setMessage("");
-      toast.success("Mensagem enviada", {
-        style: {
-          fontSize: "1.5rem",
-          fontWeight: "bold",
-        },
-      });
+      const templeteParams = {
+        from_name: name,
+        email: email,
+        message: message
+      }
+      emailjs
+        .send(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
+          templeteParams,
+          import.meta.env.VITE_PUBLIC_KEY
+        );
+        setName("");
+        setMail("");
+        setMessage("");
+        toast.success("Mensagem enviada", {
+          style: {
+            fontSize: "1.5rem",
+            fontWeight: "bold",
+          },
+        });
+      
     } catch {
       toast.error("Erro ao enviar mensagem", {
         style: {
