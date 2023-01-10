@@ -10,7 +10,7 @@ export const Container = styled.div`
   }
 
   #loading {
-    min-height: 463px;
+    min-height: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
