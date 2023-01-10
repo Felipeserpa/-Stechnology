@@ -1,4 +1,4 @@
-import { getProject } from "../../../../helpers/prismic/posts";
+import { getProject } from "../../../helpers/prismic/posts";
 import { Item } from "./item";
 
 

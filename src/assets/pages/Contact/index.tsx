@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { Form } from "./Form";
+import { Form } from "../../components/Form";
 
 export function Contact() {
   return (

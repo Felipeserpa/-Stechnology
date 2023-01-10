@@ -1,4 +1,4 @@
-import { projectInterface } from "../../../../helpers/prismic/types/portfolio";
+import { projectInterface } from "../../../helpers/prismic/types/portfolio";
 
 export function Item({
   slug,
