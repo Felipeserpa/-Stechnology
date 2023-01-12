@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -65,6 +65,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 3rem;
   color: ${(props) => props.theme.secondaryColor};
   transition: 0.6s;
@@ -126,6 +129,6 @@ body::-webkit-scrollbar-thumb:hover {
 
     section {
         overflow-x: hidden;
-    } 
+    }
 }
 `;

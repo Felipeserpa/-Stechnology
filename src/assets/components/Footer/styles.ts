@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   .section-blue {
@@ -41,15 +41,6 @@ export const Container = styled.div`
     @media (max-width: 930px) {
       height: 8rem;
       width: 100%;
-    }
-  }
-
-  footer .container p {
-    font-size: 1.7rem;
-    font-weight: 500;
-    color: ${(props) => props.theme.white};
-    @media (max-width: 930px) {
-      font-size: 1.4rem;
     }
   }
 `;
