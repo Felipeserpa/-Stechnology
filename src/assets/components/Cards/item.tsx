@@ -19,7 +19,7 @@ export function Item({
         <p>{description}</p>
         <div className="link">
           <a href={site} target="_blank">
-            Deploy
+            Site
           </a>
         </div>
         <div className="link">
