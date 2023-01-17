@@ -18,5 +18,5 @@ interface ProjectInterface {
 }
 
 interface CardProps {
-  projects: projectInterface[];
+  projects: ProjectInterface[];
 }

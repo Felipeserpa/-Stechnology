@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-useless-fragment */
 import { getProject } from '../../../helpers/prismic/posts';
 import Loading from '../Loading';
-import { Item } from './item';
+import Item from './item';
 
 export default function Cards() {
   const data = getProject();

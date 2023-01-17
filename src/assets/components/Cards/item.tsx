@@ -1,20 +1,23 @@
-import { projectInterface } from '../../../helpers/prismic/types/portfolio';
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable jsx-a11y/anchor-has-content */
+import { ProjectInterface } from '../../../helpers/prismic/types/portfolio';
 
-export function Item({
+export default function Item({
   slug,
   title,
   description,
   site,
   github,
   thumbnail,
-}: projectInterface) {
+}: ProjectInterface) {
   let msgGithub;
   !github ? (msgGithub = '') : (msgGithub = 'Projeto no Github');
 
   return (
     <div className="card" data-aos="fade-up">
       <div className="card-description">
-        <a href={slug}></a>
+        <a href={slug} />
         <h1>{title}</h1>
         <p>{description}</p>
         <div className="link">
