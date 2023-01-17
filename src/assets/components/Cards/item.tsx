@@ -1,4 +1,4 @@
-import { projectInterface } from "../../../helpers/prismic/types/portfolio";
+import { projectInterface } from '../../../helpers/prismic/types/portfolio';
 
 export function Item({
   slug,
@@ -9,7 +9,7 @@ export function Item({
   thumbnail,
 }: projectInterface) {
   let msgGithub;
-  !github ? (msgGithub = "") : (msgGithub = "Projeto no Github");
+  !github ? (msgGithub = '') : (msgGithub = 'Projeto no Github');
 
   return (
     <div className="card" data-aos="fade-up">
@@ -18,18 +18,18 @@ export function Item({
         <h1>{title}</h1>
         <p>{description}</p>
         <div className="link">
-          <a href={site} target="_blank">
+          <a href={site} target="_blank" rel="noreferrer">
             Site
           </a>
         </div>
         <div className="link">
-          <a href={github} target="_blank">
+          <a href={github} target="_blank" rel="noreferrer">
             {msgGithub}
           </a>
         </div>
       </div>
       <div className="card-image">
-        <a href={site} target="_blank">
+        <a href={site} target="_blank" rel="noreferrer">
           <img src={thumbnail} alt={thumbnail} />
         </a>
       </div>

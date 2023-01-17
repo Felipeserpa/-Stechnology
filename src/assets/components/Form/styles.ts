@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.div`
+const Container = styled.div`
   width: 900px;
   @media (max-width: 920px) {
     width: 700px;
@@ -25,7 +25,7 @@ export const Container = styled.div`
 
   input {
     border-color: ${(props) => props.theme.primaryColor};
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     width: 100%;
     background-color: ${(props) => props.theme.darkGrey};
@@ -46,7 +46,7 @@ export const Container = styled.div`
 
   textarea {
     height: 15rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: inherit;
     font-size: 2rem;
     width: 100%;
@@ -94,3 +94,5 @@ export const Container = styled.div`
     }
   }
 `;
+
+export default Container;

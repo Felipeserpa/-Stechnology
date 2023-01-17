@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.div`
+const Container = styled.div`
   .presentation {
     height: 100vh;
     background-image: url(/onur-binay-_yC2htzMYnI-unsplash.webp);
@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 
   .presentation::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -124,3 +124,5 @@ export const Container = styled.div`
     }
   }
 `;
+
+export default Container;

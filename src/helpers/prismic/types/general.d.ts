@@ -1,9 +1,9 @@
-export interface prismicText {
-    type: string;
-    text: string;
+export interface PrismicText {
+  type: string;
+  text: string;
 }
 
-export interface prismicImage {
+export interface PrismicImage {
   alt?: string;
   url: string;
   dimensions?: {
@@ -12,7 +12,7 @@ export interface prismicImage {
   };
 }
 
-export interface prismicUrl {
-    link_type?: string;
-    url: string;
+export interface PrismicUrl {
+  link_type?: string;
+  url: string;
 }

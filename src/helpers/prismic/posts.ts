@@ -1,13 +1,13 @@
 import {
   useAllPrismicDocumentsByType,
   useSinglePrismicDocument,
-} from "@prismicio/react";
+} from '@prismicio/react';
 
 // Importa o paragrafo sobre mim do Prismic
 
 export const getAboutMe = () => {
-  const [document] = useSinglePrismicDocument("about_me");
-  if (!document?.data) return null;
+  const [document] = useSinglePrismicDocument('about_me');
+  if (document?.data == null) return null;
   const data = document?.data;
   return data;
 };
@@ -15,10 +15,10 @@ export const getAboutMe = () => {
 // Importa os projetos do Prismic
 
 export const getProject = () => {
-  const [document] = useAllPrismicDocumentsByType("portfolio", {
+  const [document] = useAllPrismicDocumentsByType('portfolio', {
     orderings: {
-      field: "document.first_publication_date",
-      direction: "desc",
+      field: 'document.first_publication_date',
+      direction: 'desc',
     },
   });
 

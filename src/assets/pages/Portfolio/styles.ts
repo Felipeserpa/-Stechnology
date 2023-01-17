@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.div`
+const Container = styled.div`
   .card {
     columns: 2 35rem;
     height: max-content;
@@ -48,3 +48,5 @@ export const Container = styled.div`
     background-color: ${(props) => props.theme.transparent};
   }
 `;
+
+export default Container;

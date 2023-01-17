@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.div`
+const Container = styled.div`
   .screen {
     position: relative;
     width: 100%;
@@ -16,6 +16,7 @@ export const Container = styled.div`
     justify-content: center;
     margin: 0 auto;
   }
+
   .circle {
     position: absolute;
     width: 4rem;
@@ -27,7 +28,7 @@ export const Container = styled.div`
 
   .circle:before {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     top: 0;
     height: 100%;
@@ -42,3 +43,5 @@ export const Container = styled.div`
     }
   }
 `;
+
+export default Container;

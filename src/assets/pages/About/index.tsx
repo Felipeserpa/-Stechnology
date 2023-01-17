@@ -1,9 +1,8 @@
+import { getAboutMe } from '../../../helpers/prismic/posts';
+import Loading from '../../components/Loading';
+import Container from './styles';
 
-import { getAboutMe } from "../../../helpers/prismic/posts";
-import { Loading } from "../../components/Loading";
-import { Container } from "./styles";
-
-export function About() {
+export default function About() {
   const paragraph = getAboutMe();
   return (
     <Container>

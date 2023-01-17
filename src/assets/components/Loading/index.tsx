@@ -1,15 +1,13 @@
-import { Container } from "./styles";
+import Container from './styles';
 
-
-export function Loading() {
+export default function Loading() {
   return (
     <Container>
       <div className="screen">
         <div id="loading">
-          <div className="circle"></div>
+          <div className="circle" />
         </div>
       </div>
     </Container>
   );
 }
-

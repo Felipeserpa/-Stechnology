@@ -1,8 +1,8 @@
-import { Container } from "./styles";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { Form } from "../../components/Form";
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import Container from './styles';
+import Form from '../../components/Form';
 
-export function Contact() {
+export default function Contact() {
   return (
     <Container>
       <section id="contact" className="section-grey">
@@ -11,19 +11,31 @@ export function Contact() {
           <h3>Me envie uma mensagem que retornarei em breve!</h3>
           <Form />
           <div className="section-container">
-            <a href="mailto:samuel7silva@outlook.com" target="_blank">
+            <a
+              href="mailto:samuel7silva@outlook.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i>
                 <FaEnvelope />
               </i>
               samuel7silva@outlook.com
             </a>
-            <a href="https://github.com/samuelsilvati" target="_blank">
+            <a
+              href="https://github.com/samuelsilvati"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i>
                 <FaGithub />
               </i>
               Github/samuelsilvati
             </a>
-            <a href="https://www.linkedin.com/in/samuelsilvati" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/samuelsilvati"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i>
                 <FaLinkedin />
               </i>

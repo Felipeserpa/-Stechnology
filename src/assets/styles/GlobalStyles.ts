@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 
 * {
   padding: 0;
@@ -132,3 +132,5 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 `;
+
+export default GlobalStyles;

@@ -1,8 +1,11 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { useLayoutEffect, useState } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import { Container } from './styles';
+import Container from './styles';
 
-export function Header() {
+export default function Header() {
   const [active, setMode] = useState(false);
   const toggleMode = () => {
     setMode(!active);
@@ -37,7 +40,11 @@ export function Header() {
             </a>
           </div>
           <div className={active ? 'nav-menu  active' : 'nav-menu '}>
-            <ul onClick={() => setMode(false)}>
+            <ul
+              onClick={() => {
+                setMode(false);
+              }}
+            >
               <li>
                 <a href="#inicio">HOME</a>
               </li>
@@ -55,17 +62,31 @@ export function Header() {
               </li>
             </ul>
 
-            <div className="social-links" onClick={() => setMode(false)}>
-              <a href="https://github.com/samuelsilvati" target="_blank">
+            <div
+              className="social-links"
+              onClick={() => {
+                setMode(false);
+              }}
+            >
+              <a
+                href="https://github.com/samuelsilvati"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
               <a
                 href="https://www.linkedin.com/in/samuelsilvati"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaLinkedin />
               </a>
-              <a href="mailto:samuel7silva@outlook.com" target="_blank">
+              <a
+                href="mailto:samuel7silva@outlook.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaEnvelope />
               </a>
             </div>
@@ -75,9 +96,9 @@ export function Header() {
             id="one"
             onClick={toggleMode}
           >
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
+            <span className="bar" />
+            <span className="bar" />
+            <span className="bar" />
           </div>
         </nav>
       </header>

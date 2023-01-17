@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.section`
+const Container = styled.section`
   .section-container {
     padding-top: 5rem;
     display: flex;
@@ -38,3 +38,5 @@ export const Container = styled.section`
     }
   }
 `;
+
+export default Container;

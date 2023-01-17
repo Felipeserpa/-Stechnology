@@ -1,21 +1,23 @@
-import { Container } from "./styles";
+import Container from './styles';
 
-export function Presentation() {
+export default function Presentation() {
   return (
     <Container>
       <div className="presentation container" id="inicio">
         <div>
           <h1>
-            Olá,<span></span>
+            Olá,
+            <span />
           </h1>
           <h1>
-            eu sou o<span></span>
+            eu sou o<span />
           </h1>
           <h1>
-            Samuel<span></span>
+            Samuel
+            <span />
           </h1>
           <a href="#portfolio" type="button" className="cta">
-            <button>Portfólio</button>
+            <button type="button">Portfólio</button>
           </a>
         </div>
       </div>

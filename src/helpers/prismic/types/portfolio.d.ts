@@ -1,14 +1,14 @@
-import { prismicImage, prismicText, prismicUrl } from "./general";
+import { PrismicImage, PrismicText, PrismicUrl } from './general';
 
-export interface portfolioDocument {
-  title?: prismicText[];
-  description?: prismicText[];
-  site?: prismicUrl;
-  github?: prismicUrl;
-  thumbnail?: prismicImage;
+export interface PortfolioDocument {
+  title?: PrismicText[];
+  description?: PrismicText[];
+  site?: PrismicUrl;
+  github?: PrismicUrl;
+  thumbnail?: PrismicImage;
 }
 
-interface projectInterface {
+interface ProjectInterface {
   slug: string;
   title: string;
   description: string;
@@ -17,6 +17,6 @@ interface projectInterface {
   thumbnail: string;
 }
 
-interface cardProps {
+interface CardProps {
   projects: projectInterface[];
 }

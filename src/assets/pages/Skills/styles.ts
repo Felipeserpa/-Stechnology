@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.div`
+const Container = styled.div`
   #skills-container {
     max-width: 1100px;
     display: flex;
@@ -8,7 +8,6 @@ export const Container = styled.div`
     flex-wrap: wrap;
     gap: 5rem;
     padding: 3rem;
-    
     @media (max-width: 930px) {
       gap: 2.5rem;
     }
@@ -38,3 +37,5 @@ export const Container = styled.div`
     }
   }
 `;
+
+export default Container;

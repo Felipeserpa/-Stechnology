@@ -1,7 +1,6 @@
-import { portfolioDocument } from "./portfolio"
+import { PortfolioDocument } from './portfolio';
 
-
-export const postData = (data: portfolioDocument) => {
+const postData = (data: PortfolioDocument) => {
   return {
     title: data?.title?.[0]?.text,
     description: data?.description?.[0]?.text,
@@ -9,5 +8,5 @@ export const postData = (data: portfolioDocument) => {
     github: data?.github?.url,
     thumbnail: data?.thumbnail?.url,
   };
-}
-
+};
+export default postData;

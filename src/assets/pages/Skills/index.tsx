@@ -1,10 +1,17 @@
-import { Container } from "./styles";
-import { FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaReact, FaNodeJs } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb, SiStyledcomponents } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaGitAlt,
+  FaReact,
+  FaNodeJs,
+} from 'react-icons/fa';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { SiMongodb, SiStyledcomponents } from 'react-icons/si';
+import { GrMysql } from 'react-icons/gr';
+import Container from './styles';
 
-export function Skills() {
+export default function Skills() {
   return (
     <Container>
       <section id="skills" className="section-blue">

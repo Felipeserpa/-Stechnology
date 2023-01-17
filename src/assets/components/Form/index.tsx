@@ -1,22 +1,21 @@
-import { FormEvent, useState } from "react";
-import { Container } from "./styles";
-import toast from "react-hot-toast";
-import emailjs from "@emailjs/browser"
+import { FormEvent, useState } from 'react';
+import toast from 'react-hot-toast';
+import emailjs from '@emailjs/browser';
+import Container from './styles';
 
-
-export function Form() {
-  const [name, setName] = useState("");
-  const [email, setMail] = useState("");
-  const [message, setMessage] = useState("");
+export default function Form() {
+  const [name, setName] = useState('');
+  const [email, setMail] = useState('');
+  const [message, setMessage] = useState('');
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
     if (!name.trim() || !email.trim() || !message.trim()) {
-      toast.error("Preencha todos os campos", {
+      toast.error('Preencha todos os campos', {
         style: {
-          fontSize: "1.5rem",
-          fontWeight: "bold",
+          fontSize: '1.5rem',
+          fontWeight: 'bold',
         },
       });
       return;
@@ -24,31 +23,29 @@ export function Form() {
     try {
       const templeteParams = {
         from_name: name,
-        email: email,
-        message: message
-      }
-      emailjs
-        .send(
-          import.meta.env.VITE_SERVICE_ID,
-          import.meta.env.VITE_TEMPLATE_ID,
-          templeteParams,
-          import.meta.env.VITE_PUBLIC_KEY
-        );
-        setName("");
-        setMail("");
-        setMessage("");
-        toast.success("Mensagem enviada", {
-          style: {
-            fontSize: "1.5rem",
-            fontWeight: "bold",
-          },
-        });
-      
-    } catch {
-      toast.error("Erro ao enviar mensagem", {
+        email,
+        message,
+      };
+      emailjs.send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        templeteParams,
+        import.meta.env.VITE_PUBLIC_KEY
+      );
+      setName('');
+      setMail('');
+      setMessage('');
+      toast.success('Mensagem enviada', {
         style: {
-          fontSize: "1.5rem",
-          fontWeight: "bold",
+          fontSize: '1.5rem',
+          fontWeight: 'bold',
+        },
+      });
+    } catch {
+      toast.error('Erro ao enviar mensagem', {
+        style: {
+          fontSize: '1.5rem',
+          fontWeight: 'bold',
         },
       });
     }
@@ -71,7 +68,7 @@ export function Form() {
           placeholder="Mensagem"
           value={message}
           onChange={({ target }) => setMessage(target.value)}
-        ></textarea>
+        />
         <button type="submit">Enviar</button>
       </form>
     </Container>
