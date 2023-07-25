@@ -29,7 +29,7 @@ const Container = styled.div`
   }
 
   #skills-container .icon {
-    font-size: 10rem;
+    font-size: 9rem;
     color: ${(props) => props.theme.secondaryColor};
 
     @media (max-width: 930px) {
