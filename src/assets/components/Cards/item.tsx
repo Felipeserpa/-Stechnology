@@ -17,7 +17,7 @@ export default function Item({
   return (
     <div className="card" data-aos="fade-up">
       <div className="card-description">
-        <a href={slug} />
+        <a href={slug} className="slug" />
         <h1>{title}</h1>
         <p>{description}</p>
         <div className="link">

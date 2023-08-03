@@ -2,19 +2,29 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   .card {
-    columns: 2 35rem;
-    height: max-content;
+    display: flex;
+    height: 32rem;
     margin: 0 1rem 3rem 1rem;
     background-image: ${(props) => props.theme.linearGradient};
     transition: 0.6s ease-in-out;
     @media (max-width: 930px) {
       margin: 0 1rem 2rem 1rem;
+      flex-direction: column;
+      height: max-content;
     }
+  }
+
+  .slug {
+    display: none;
   }
 
   .card-description {
     display: flex;
+    /* justify-items: start; */
+    align-items: start;
+    justify-content: start;
     height: 100%;
+    width: 100%;
     flex-direction: column;
     padding: 2rem;
   }
@@ -40,7 +50,8 @@ const Container = styled.div`
 
   .card-image {
     padding: 1rem;
-    height: 36rem;
+    width: 100%;
+    height: 100%;
   }
 
   .card:hover {
