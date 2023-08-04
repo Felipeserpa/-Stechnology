@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-useless-fragment */
-import { getProject } from '../../../helpers/prismic/posts';
+import { getProject } from '../../helpers/prismic/posts';
 import Loading from '../Loading';
 import Item from './item';
 

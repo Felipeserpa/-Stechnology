@@ -1,4 +1,4 @@
-import { getAboutMe } from '../../../helpers/prismic/posts';
+import { getAboutMe } from '../../helpers/prismic/posts';
 import Loading from '../../components/Loading';
 import Container from './styles';
 

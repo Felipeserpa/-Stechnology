@@ -1,12 +1,12 @@
 import { ThemeProvider } from 'styled-components';
 import { Toaster } from 'react-hot-toast';
-import About from './assets/sections/About';
-import Contact from './assets/sections/Contact';
-import Footer from './assets/components/Footer';
-import Header from './assets/components/Header';
-import Portfolio from './assets/sections/Portfolio';
-import Hero from './assets/sections/Hero';
-import Skills from './assets/sections/Skills';
+import About from './sections/About';
+import Contact from './sections/Contact';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Portfolio from './sections/Portfolio';
+import Hero from './sections/Hero';
+import Skills from './sections/Skills';
 import GlobalStyles from './assets/styles/GlobalStyles';
 import theme from './assets/styles/theme';
 
