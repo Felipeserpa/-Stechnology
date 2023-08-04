@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable jsx-a11y/anchor-has-content */
-import { ProjectInterface } from '../../../helpers/prismic/types/portfolio';
+import { ProjectInterface } from '../../helpers/prismic/types/portfolio';
 
 export default function Item({
   slug,
