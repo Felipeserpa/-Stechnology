@@ -1,6 +1,7 @@
 import { FaJs, FaGitAlt, FaReact, FaNodeJs } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import {
+  SiFigma,
   SiMongodb,
   SiStyledcomponents,
   SiTailwindcss,
@@ -18,6 +19,10 @@ export default function Skills() {
           <div className="section-container">
             <div id="skills-container" data-aos="fade-up">
               <div className="skill-card">
+                <h2>Git</h2>
+                <FaGitAlt className="icon" />
+              </div>
+              <div className="skill-card">
                 <h2>JavaScript</h2>
                 <FaJs className="icon" />
               </div>
@@ -26,11 +31,7 @@ export default function Skills() {
                 <SiTypescript className="icon" />
               </div>
               <div className="skill-card">
-                <h2>Git</h2>
-                <FaGitAlt className="icon" />
-              </div>
-              <div className="skill-card">
-                <h2>React Js</h2>
+                <h2>React</h2>
                 <FaReact className="icon" />
               </div>
               <div className="skill-card">
@@ -56,6 +57,10 @@ export default function Skills() {
               <div className="skill-card">
                 <h2>Tailwindcss</h2>
                 <SiTailwindcss className="icon" />
+              </div>
+              <div className="skill-card">
+                <h2>Figma</h2>
+                <SiFigma className="icon" />
               </div>
             </div>
           </div>
