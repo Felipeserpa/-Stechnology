@@ -7,20 +7,25 @@ const Container = styled.div`
     margin: 0 1rem 3rem 1rem;
     background-image: ${(props) => props.theme.linearGradient};
     transition: 0.6s ease-in-out;
+    justify-content: space-between;
     @media (max-width: 930px) {
       margin: 0 1rem 2rem 1rem;
       flex-direction: column;
       height: max-content;
     }
   }
-
-  .slug {
-    display: none;
+  .image-container {
+    display: flex;
+    justify-content: space-between;
   }
 
+  .image-container img {
+    width: 140px;
+    margin: 10px; /* Cria um espaço de 10px em todos os lados da imagem */
+  }
   .card-description {
     display: flex;
-    /* justify-items: start; */
+    justify-items: start;
     align-items: start;
     justify-content: start;
     height: 100%;
@@ -29,27 +34,8 @@ const Container = styled.div`
     padding: 2rem;
   }
 
-  .card-description h1 {
-    font-size: 3.5rem;
-    padding: 2rem 0;
-    color: ${(props) => props.theme.secondaryColor};
-  }
-  .link {
-    padding-top: 1rem;
-  }
-  .link a {
-    font-size: 1.6rem;
-    color: ${(props) => props.theme.white};
-    font-weight: bold;
-  }
-
-  .link a:hover {
-    color: ${(props) => props.theme.secondaryColorHover};
-    transition: 0.3s;
-  }
-
   .card-image {
-    padding: 1rem;
+    padding: 8cqb;
     width: 100%;
     height: 100%;
   }

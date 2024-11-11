@@ -6,7 +6,10 @@ import {
   SiStyledcomponents,
   SiTailwindcss,
   SiTypescript,
+  SiFirebase,
+  SiPostgresql,
 } from 'react-icons/si';
+import { TbBrandReactNative } from 'react-icons/tb';
 import { GrMysql } from 'react-icons/gr';
 import Container from './styles';
 
@@ -15,7 +18,7 @@ export default function Skills() {
     <Container>
       <section id="skills" className="section-blue">
         <div className="container">
-          <h1 className="section-title text-white">Skills</h1>
+          <h1 className="section-title text-white">Tecnologias</h1>
           <div className="section-container">
             <div id="skills-container" data-aos="fade-up">
               <div className="skill-card">
@@ -35,6 +38,10 @@ export default function Skills() {
                 <FaReact className="icon" />
               </div>
               <div className="skill-card">
+                <h2>React Native</h2>
+                <TbBrandReactNative className="icon" />
+              </div>
+              <div className="skill-card">
                 <h2>Next.js</h2>
                 <TbBrandNextjs className="icon" />
               </div>
@@ -47,8 +54,8 @@ export default function Skills() {
                 <SiMongodb className="icon" />
               </div>
               <div className="skill-card">
-                <h2>MySQL</h2>
-                <GrMysql className="icon" />
+                <h2>Postgresql</h2>
+                <SiPostgresql className="icon" />
               </div>
               <div className="skill-card">
                 <h2>Styled Components</h2>
@@ -61,6 +68,10 @@ export default function Skills() {
               <div className="skill-card">
                 <h2>Figma</h2>
                 <SiFigma className="icon" />
+              </div>
+              <div className="skill-card">
+                <h2>Firebase</h2>
+                <SiFirebase className="icon" />
               </div>
             </div>
           </div>

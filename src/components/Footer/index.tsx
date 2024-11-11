@@ -6,27 +6,15 @@ export default function Footer() {
     <Container>
       <footer className="container section-blue">
         <div className="section-container">
-          <p>Desenvolvido por Samuel</p>
+          <p>Desenvolvido por @Stechnology</p>
           <div className="social-links">
-            <a
-              href="https://github.com/samuelsilvati"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
-            <a
-              href="https://www.linkedin.com/in/samuelsilvati"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="l" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </a>
-            <a
-              href="mailto:samuel7silva@outlook.com"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="" target="_blank" rel="noreferrer">
               <FaEnvelope />
             </a>
           </div>

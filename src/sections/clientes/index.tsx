@@ -1,12 +1,12 @@
 import Cards from '../../components/Cards/Cards';
 import Container from './styles';
 
-export default function Portfolio() {
+export default function cliente() {
   return (
     <Container>
-      <section id="portfolio" className="section-grey">
+      <section className="section-grey " id="cliente">
         <div className="container">
-          <h1 className="section-title text-blue">Portfólio</h1>
+          <h1 className="section-title text-blue">Clientes</h1>
           <div className="section-container">
             <Cards />
           </div>

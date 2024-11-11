@@ -10,10 +10,10 @@ export default function Presentation() {
             <span />
           </h1>
           <h1>
-            eu sou o<span />
+            somos a <span />
           </h1>
           <h1>
-            Samuel
+            Stechnology
             <span />
           </h1>
           <a href="#portfolio" type="button" className="cta">

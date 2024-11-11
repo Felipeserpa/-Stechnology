@@ -16,10 +16,16 @@ const Container = styled.div`
     font-size: 2rem;
     color: ${(props) => props.theme.aliceBlue};
     line-height: 2.8rem;
+    padding: 10px;
+  }
+  #about article li {
+    font-size: 2rem;
+    color: ${(props) => props.theme.aliceBlue};
+    line-height: 2.8rem;
   }
 
   #about picture img {
-    width: 400px;
+    width: 200px;
     border-radius: 0.5rem;
   }
 
