@@ -9,10 +9,12 @@ import Hero from './sections/Hero';
 import Skills from './sections/Skills';
 import GlobalStyles from './assets/styles/GlobalStyles';
 import theme from './assets/styles/theme';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <Analytics />
       <Toaster position="bottom-right" font-size="1 rem" />
       <GlobalStyles />
       <Header />
