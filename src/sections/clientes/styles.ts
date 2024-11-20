@@ -39,6 +39,12 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
   }
+  #img {
+    width: 376px;
+  }
+  #img1 {
+    width: 200px;
+  }
 
   .card:hover {
     transform: scale(1.02);
