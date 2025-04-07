@@ -16,12 +16,20 @@ const Container = styled.div`
   }
   .image-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap; /* Impede que as imagens quebrem linha */
+    overflow-x: auto; /* Ativa scroll horizontal se precisar */
+    gap: 1rem; /* Espaço entre as imagens */
+    padding: 1rem;
+    scroll-behavior: smooth; /* Scroll suave */
   }
 
   .image-container img {
-    width: 140px;
-    margin: 10px; /* Cria um espaço de 10px em todos os lados da imagem */
+    flex-shrink: 0;
+    width: 310px; /* Aumentei a largura */
+    height: 230px; /* Altura definida */
+    border-radius: 12px;
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   }
   .card-description {
     display: flex;

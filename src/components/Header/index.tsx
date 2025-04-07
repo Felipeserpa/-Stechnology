@@ -71,7 +71,11 @@ export default function Header() {
               <a href="" target="_blank" rel="noreferrer">
                 <FaGithub />
               </a>
-              <a href="" target="_blank" rel="noreferrer">
+              <a
+                href=" https://www.linkedin.com/in/felipe-serpa-149b88223/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedin />
               </a>
               <a href="" target="_blank" rel="noreferrer">
