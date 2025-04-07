@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { useLayoutEffect, useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import Container from './styles';
 
 export default function Header() {
@@ -68,7 +68,19 @@ export default function Header() {
                 setMode(false);
               }}
             >
-              <a href="" target="_blank" rel="noreferrer">
+              <a
+                href=" https://wa.me/5581995773197?text=Olá%2C%20gostaria%20de%20fazer%20um%20orçamento!"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaWhatsapp />
+              </a>
+
+              <a
+                href=" https://github.com/Felipeserpa"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
               <a
@@ -79,7 +91,7 @@ export default function Header() {
                 <FaLinkedin />
               </a>
               <a
-                href="stecnologico@hotmail.com"
+                href="mailto:stecnologico@hotmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
