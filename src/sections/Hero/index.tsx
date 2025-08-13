@@ -13,7 +13,7 @@ export default function Presentation() {
             somos a <span />
           </h1>
           <h1>
-            Stechnology
+            Stecnlogic
             <span />
           </h1>
           <a href="#portfolio" type="button" className="cta">
