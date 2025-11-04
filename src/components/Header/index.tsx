@@ -38,9 +38,9 @@ export default function Header() {
             <a href="/">
               <img
                 className="rounded-full w-20 h-20 object-cover"
-                src="stecno.png/"
-                alt="stecnologico"
-                style={{ width: 120 }}
+                src="s.png"
+                alt="serpa soluções em tecnologia"
+                style={{ width: 220, height: 90 }}
               />
             </a>
           </div>

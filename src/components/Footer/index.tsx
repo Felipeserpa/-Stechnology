@@ -6,7 +6,7 @@ export default function Footer() {
     <Container>
       <footer className="container section-blue">
         <div className="section-container">
-          <p>Desenvolvido por @Stechnology</p>
+          <p>Desenvolvido por @Serpa Soluções em Tecnologia</p>
           <div className="social-links">
             <a
               href=" https://wa.me/5581995773197?text=Olá%2C%20gostaria%20de%20fazer%20um%20orçamento!"

@@ -48,7 +48,7 @@ const PriceCard = () => {
 
       {/* Plano Avançado */}
       <PricingTab
-        planName="Sistemas Personalizados"
+        planName="Sistemas Personalizados + Apps"
         price={1000}
         features={[
           'Analise de requisitos',

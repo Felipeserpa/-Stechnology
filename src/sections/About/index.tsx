@@ -9,18 +9,18 @@ export default function About() {
           <h1 className="section-title text-white">Sobre Mim</h1>
           <div className="section-container">
             <article>
-              <p>Olá,Somos a Stechnology.</p>
+              <p>Olá,Somos a Serpa Soluções em Tecnologia</p>
               <p>
-                A Stechnology é uma empresa apaixonada por tecnologia e focada
-                em transformar ideias em soluções digitais inovadoras. Desde o
-                início de nossas atividades, em 2022, nos dedicamos a criar
-                sites, sistemas web e aplicativos mobile que impulsionam os
-                negócios de nossos clientes. Com uma equipe experiente e
-                multidisciplinar, oferecemos soluções personalizadas e de alta
-                qualidade, sempre alinhadas às necessidades e objetivos de cada
-                cliente. Nossa missão é simplificar a vida das pessoas através
-                da tecnologia, proporcionando experiências digitais intuitivas e
-                eficientes.
+                A Serpa Soluções em Tecnologia é uma empresa apaixonada por
+                tecnologia e focada em transformar ideias em soluções digitais
+                inovadoras. Desde o início de nossas atividades, em 2022, nos
+                dedicamos a criar sites, sistemas web e aplicativos mobile que
+                impulsionam os negócios de nossos clientes. Com uma equipe
+                experiente e multidisciplinar, oferecemos soluções
+                personalizadas e de alta qualidade, sempre alinhadas às
+                necessidades e objetivos de cada cliente. Nossa missão é
+                simplificar a vida das pessoas através da tecnologia,
+                proporcionando experiências digitais intuitivas e eficientes.
               </p>
               <p>Nossos serviços:</p>
               <li>Desenvolvimento de sites personalizados</li>

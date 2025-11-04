@@ -48,8 +48,9 @@ export default function Presentation() {
           <h2>
             Olá, somos a <span />
           </h2>
+
           <h2>
-            Stecnlogic e temos o plano ideal.
+            Serpa Soluções em Tecnologia
             <span />
           </h2>
 
