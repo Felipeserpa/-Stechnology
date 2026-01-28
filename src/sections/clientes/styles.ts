@@ -58,6 +58,72 @@ const Container = styled.div`
     transform: scale(1.02);
     background-color: ${(props) => props.theme.transparent};
   }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+  }
+
+  .project-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .project-content {
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .project-content h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #222;
+  }
+
+  .project-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .project-button {
+    display: block;
+    margin: 0 20px 20px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .project-button:hover {
+    background: #0056b3;
+  }
+  .project-button:active {
+    transform: translateY(0);
+  }
 `;
 
 export default Container;
