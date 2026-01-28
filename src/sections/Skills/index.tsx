@@ -33,7 +33,7 @@ function App() {
         Soluções digitais com preços transparentes para você planejar seu
         investimento com confiança.
       </SectionParagraph>
-      <PriceCard />
+      <PriceCard planName={''} price={''} features={[]} />
     </SectionWrapper>
   );
 }
