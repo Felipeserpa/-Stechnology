@@ -33,7 +33,10 @@ export default function Presentation() {
           property="og:description"
           content="Pare de perder clientes. Criamos  sites de empresas."
         />
-        <meta property="og:url" content="https://stechnology.vercel.app/" />
+        <meta
+          property="og:url"
+          content="https://serpasolucoesemtecnologia.vercel.app/"
+        />
         {/* Adicione outras tags (og:image, etc.) se necessário */}
       </Helmet>
 

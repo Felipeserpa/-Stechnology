@@ -13,7 +13,7 @@ const Card = styled.div`
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  width: 320px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -80,8 +80,11 @@ const FeaturesList = styled.ul`
 const FeatureItem = styled.li`
   display: flex;
   align-items: flex-start;
-  margin-bottom: 0.5rem;
-  color: #4b5563;
+  max-width: 300px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #030911;
 `;
 
 const CheckIcon = styled.span`

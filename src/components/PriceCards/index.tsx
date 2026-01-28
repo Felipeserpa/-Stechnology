@@ -9,7 +9,7 @@ const PriceCardContainer = styled.div`
   align-items: stretch;
   gap: 2rem;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 
   @media (max-width: 768px) {
