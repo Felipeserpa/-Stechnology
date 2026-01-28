@@ -17,44 +17,50 @@ const PriceCardContainer = styled.div`
     align-items: center;
   }
 `;
+interface PriceCardProps {
+  planName: string;
+  price: string | number;
+  features: string[];
+}
 
-const PriceCard = () => {
+const PriceCard = (props: PriceCardProps) => {
   return (
     <PriceCardContainer>
       {/* Plano Gratuito */}
+      {/* Plano 1 */}
       <PricingTab
-        planName="Landing Pages"
+        planName="Landing Pages de Alta Conversão"
         price={600}
         features={[
-          'Design responsivo e moderno',
-          'Otimização para conversão',
-          'Integração com redes sociais',
-          'Formulário de contato',
+          'Design Ultra-Responsivo (Mobile First)',
+          'Foco em Captura de Leads e Vendas',
+          'Botão de WhatsApp e Redes Integrados',
+          'Hospedagem e Configuração Inclusa',
         ]}
       />
 
-      {/* Plano Básico (Popular) */}
+      {/* Plano 2 - O Popular */}
       <PricingTab
         popular
-        planName="Sites Portfólio"
-        price={800}
+        planName="Sites  Profissionais"
+        price={850}
         features={[
-          'Design personalizado',
-          'Galeria de projetos',
-          'Blog integrado',
-          'SEO básico',
+          'Layout Exclusivo e Autoral',
+          'Gestão Dinâmica de Projetos',
+          'Blog para Autoridade no Nicho',
+          'Otimização Completa para o Google',
         ]}
       />
 
-      {/* Plano Avançado */}
+      {/* Plano 3 */}
       <PricingTab
-        planName="Sistemas Personalizados + Apps"
-        price={1000}
+        planName="Sistemas & Web Apps"
+        price={1500} // Ou "1.500+" para valorizar seu tempo
         features={[
-          'Analise de requisitos',
-          'Desenvolvimento sob medida',
-          'Integração com APIs',
-          'Suporte técnico',
+          'Arquitetura de Software Sob Medida',
+          'Integrações via APIs Avançadas',
+          'Dashboard Administrativo',
+          'Suporte e Manutenção Prioritária',
         ]}
       />
     </PriceCardContainer>
