@@ -26,41 +26,88 @@ interface PriceCardProps {
 const PriceCard = (props: PriceCardProps) => {
   return (
     <PriceCardContainer>
-      {/* Plano Gratuito */}
       {/* Plano 1 */}
       <PricingTab
         planName="Landing Pages de Alta Conversão"
-        price={600}
+        price={597}
         features={[
           'Design Ultra-Responsivo (Mobile First)',
-          'Foco em Captura de Leads e Vendas',
-          'Botão de WhatsApp e Redes Integrados',
+          'Foco em Conversão e Captura de Leads',
+          'WhatsApp e Redes Sociais Integrados',
+          'Estrutura Estratégica para Anúncios',
           'Hospedagem e Configuração Inclusa',
+          'Ideal para campanhas e vendas rápidas',
         ]}
       />
 
-      {/* Plano 2 - O Popular */}
+      {/* Plano 2 */}
       <PricingTab
         popular
-        planName="Sites  Profissionais"
-        price={850}
+        planName="Gestão de Instagram & Marketing"
+        price={297}
         features={[
-          'Layout Exclusivo e Autoral',
-          'Gestão Dinâmica de Projetos',
-          'Blog para Autoridade no Nicho',
-          'Otimização Completa para o Google',
+          'Artes Profissionais para Feed e Stories',
+          'Planejamento Estratégico de Conteúdo',
+          'Estratégia de Crescimento e Autoridade',
+          'Gestão de Engajamento',
+          'Conteúdo focado em conversão',
+          'Fortalecimento da presença digital',
         ]}
       />
 
       {/* Plano 3 */}
       <PricingTab
-        planName="Sistemas & Web Apps"
-        price={1500} // Ou "1.500+" para valorizar seu tempo
+        planName="Gestão de Tráfego Pago"
+        price={497}
         features={[
-          'Arquitetura de Software Sob Medida',
-          'Integrações via APIs Avançadas',
+          'Facebook e Instagram Ads',
+          'Campanhas de Captação de Clientes',
+          'Públicos Segmentados',
+          'Otimização Semanal de Campanhas',
+          'Geração de Leads Qualificados',
+          'Escala de alcance e conversão',
+        ]}
+      />
+
+      {/* Plano 4 */}
+      <PricingTab
+        planName="Sites Profissionais"
+        price={1000}
+        features={[
+          'Layout Exclusivo e Autoral',
+          'Design Responsivo e Moderno',
+          'Blog para Autoridade no Nicho',
+          'SEO Completo para Google',
+          'Integração com WhatsApp',
+          'Estrutura profissional para empresas',
+        ]}
+      />
+
+      {/* Plano 5 */}
+      <PricingTab
+        planName="Sistemas & Web Apps"
+        price={1500}
+        features={[
+          'Arquitetura Sob Medida',
           'Dashboard Administrativo',
+          'Integrações via APIs',
+          'Automação de Processos',
+          'Sistema Escalável',
           'Suporte e Manutenção Prioritária',
+        ]}
+      />
+
+      {/* Plano 6 */}
+      <PricingTab
+        planName="Combo Presença Digital"
+        price={1297}
+        features={[
+          'Landing Page Profissional',
+          'Gestão Estratégica do Instagram',
+          'Tráfego Pago Integrado',
+          'Captação Automática de Leads',
+          'Estrutura Completa de Autoridade',
+          'Mais alcance, contatos e vendas',
         ]}
       />
     </PriceCardContainer>
